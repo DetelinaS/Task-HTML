@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>User-Create</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="main.css">
+     <script src="function.js"></script>
+</head>
+<body>
+        <h1>Create new user</h1><br>
+        <form method="post" action="http://jkorpela.fi/cgi-bin/echo.cgi">
+            <!--Username-->
+            <lable for="text" name="Username">Username</lable>
+                <input type="text" name="Username">
+                <br>
+            <label for="e-mail" name="Email">Email</label>
+                <input type="email" name="Email">
+                <br>
+            <!--Upload photo-->
+            <h3>Upload photo</h3>
+            <input type="file" name="pic" accept="image/*">
+             <!--Teams-->
+             <h3>Teams</h3>
+             <label for="team1">Team1</label>
+             <input type="checkbox" name="Teams" value="Team1" id="Teams"><br>
+             <label for="team2">Team2</label>
+             <input type="checkbox" name="Teams" value="Team2" id="Teams"><br>
+             <label for="team3">Team3</label>
+             <input type="checkbox" name="Teams" value="Team3" id="Teams"><br>
+            <!--Position-->
+            <h3>Position</h3>
+            <label for="Position1">Position1</label>
+            <input type="radio" name="Position" value="Position1" id="Position1"><br>
+            <label for="Position2">Position2</label>
+            <input type="radio"name="Position" value="Position2" id="Position2"><br>
+            <label for="Position3">Position3</label>
+            <input type="radio"name="Position" value="Position3" id="Position3"><br>
+            <!--Role-->
+            <h3>Role</h3>
+            <select name="role" size="4">
+                <option value="Admin" name="role">Admin</option>
+                <option value="Moderator" name="role">Moderator</option>
+                <option value="User" name="role">User</option>
+            </select><br>
+            <input type="submit" name="submit" value="Create!">
+        </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Youtube Advanced</title>
+    <meta charset="UTF-8">
+   
+     <link rel="stylesheet" href="main.css">
+     <script src="function.js"></script>
+</head>
+<body>
+<h1>Разширени настройки</h1><hr>
+<form method="post"  action="http://jkorpela.fi/cgi-bin/echo.cgi">
+    <b>Коментари</b><br>
+    <input type="checkbox" name="comments" value="Allow comments"/>Разрешаване на коментари 
+    <select name="type of comments">
+        <option name="comments" value="all">Всички</option>
+        <option name="comments" value="select">Избрани</option>
+    </select><br>
+    <input type="checkbox" name="comments"value="Users can see the ratings"/>Потребителите могат да виждат оценките
+    <hr>
+    <B>Собственост върху лиценза и правата</B><br>
+    <select name="license">
+        <option value="standart license">Стандартен лиценз за Youtube</option>
+    </select>
+    <hr>
+    <b>Синдикиране</b><br>
+    <input type="radio" name="syndication" value="Everywhere">Навсякъде<br>
+    <input type="radio" name="syndication" value="Platforms providing passageways"> Платформи, осигуряващи проходи<br>
+    <hr>
+    <b>Дата на записа</b>
+    <input type="date" name="date">
+    <input type="button" value="Днес">
+    <hr>
+    <input type="submit" value="Запазване на променте">
+
+</form>
+</body>
+
+
+   
+    

@@ -1,0 +1,18 @@
+/*Table border*/
+table, th, td {
+    border: 1px solid black;
+   padding: 2px;
+    text-size-adjust: 10%;
+}
+td {
+padding: 10px;
+text-align: left;  
+color:black;  
+}
+th {
+padding: 10px;
+text-align:center;  
+color:black;  
+}
+
+

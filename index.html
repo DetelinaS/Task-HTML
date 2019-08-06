@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML Exsersises</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="main.css">
+     <script src="function.js"></script>
+</head>
+<body>
+ <!-- Header -->
+               <!--navigation-->
+               <div class="topnav"> 
+                <a href="index.html">HTML</a>
+                <a href="css.html">CSS</a>
+                <a href="javascript">JavaScript</a>
+                <a href="angular">Angular</a>
+              </div>
+              <!--navigation-->
+<!-- Header -->
+
+<div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'texts')">Texts</button>
+        <button class="tablinks" onclick="openTab(event, 'Inline and Block')">Inline and Block</button>
+        <button class="tablinks" onclick="openTab(event, 'lists')">Lists</button>
+        <button class="tablinks" onclick="openTab(event, 'links')">Links</button>
+        <button class="tablinks" onclick="openTab(event, 'images')">Images</button>
+        <button class="tablinks" onclick="openTab(event, 'table')">Table</button>
+        <button class="tablinks" onclick="openTab(event, 'forms')">Forms</button>
+        <button class="tablinks" onclick="openTab(event, 'html5')">Html5</button>
+      </div>
+      
+<!-- Texts -->
+<div id="texts" class="tabcontent">
+            <ol>
+                <b>Create a web page containing the following elements:</b>
+                <li> All different types of Headings
+                    <ul>  
+                        <h1>This is h1</h1>
+                        <h2>This is h2</h2>
+                        <h3>This is h3</h3>
+                        <h4>This is h4</h4>
+                        <h5>This is h5</h5>
+                        <h6>This is h6</h6>
+                    </ul>
+                </li>
+            <li><p> Paragraphs</p></li>
+            <li><b> Bold text old </b></li>
+            <li><strong> Bold text  new way</strong></li>
+            <li><i>Italic text (old )</i></li>
+            <li><em>Italic text ( new way)</em></li>
+            <li><sub>Subscript</sub>elements</li>
+            <li><sup>Superscript </sup>elements</li>
+            </ol>    
+</div>
+<!-- Inline and Blockt -->
+ <div id="Inline and Block" class="tabcontent">
+<!-- Task -->
+     <p>
+         <ol>
+            <b>Create a web page in which:</b>
+            <li>Use at least 3 different types of block elements</li>
+            <li>Use at least 5 different types of inline elements</li>
+        </ol>
+    </p><hr>
+<!-- Block elements -->
+            <div class="container"><h1>Common block elements:</h1></div>
+            <ul>
+                <li>Paragraphs (p)</li>
+                <li> Headers (h1 through h6)</li>
+                <li>Divisions (div)</li>
+                <li>Lists and list items (ol, ul, and li)</li>
+                <li>Forms (form)</li>
+            </ul>
+        <hr>   
+<!-- Inline elements -->
+        <p>This is an <span class="inline"><Var>inline span</Var></span></p>
+        <form action="/action_page.php">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male"><br>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"><br>
+            <input type="submit" value="Submit">
+          </form>
+        <a href="https://www.w3schools.com">Visit W3Schools.com!</a>
+</div>
+<!-- Lists -->
+<div id="lists" class="tabcontent">
+<!-- Task -->
+        <p>
+                <ol>
+                   <b>Create a web page containing:</b>
+                   <li>An unordered list with 3-4 items with square bullets</li>
+                   <li>An ordered list with 3-4 items with uppercase roman numbers as list item marker</li>
+                   <li>A description list with 2-3 terms</li>
+                   <li>An ordered list containing items "Wake up", "Shopping", "Sleep". Nest an unordered list to the "Shopping" list item with appropriate items</li>
+               </ol>
+        </p>
+        <hr>
+<!-- Unordered list -->
+        <ul><b>Unordered list</b>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+<!-- Ordered listt -->
+        <ol type="I"><b>Ordered list</b>
+            <li>Iteml 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+<!-- Description list -->
+        <dl><b>Type of List</b>
+            <dt> Description list</dt>
+            <dd>A description list may contain numerous terms and descriptions, one after the other. Additionally, a description list may have multiple terms per description, as well as multiple descriptions per term. A single term may have multiple meanings and warrant multiple descriptions. Conversely, 
+                a single description may be suitable for multiple terms.</dd>
+            <dt>Ordered list</dt>
+            <dd>An ordered list starts with the "ol" tag. Each list item starts with the "li" tag.The list items will be marked with numbers by default:</dd>
+            <dt>Unordered list</dt>
+            <dd>An unordered list is simply a list of related items whose order does not matter. Creating an unordered list in HTML is accomplished using the unordered list block-level element, "ul". Each item within an unordered list is individually marked up using the list item element, "li".</dd>
+        </dl>
+<!-- Nested tables -->
+        <ol>
+            <li>Wake up</li>
+            <li>Shopping
+                <ul>
+                    <li>Milk</li>
+                    <li>Oil</li>
+                    <li>Coffee</li>
+                </ul>
+            </li>
+            <li>Sleep</li>
+        </ol>
+</div>
+
+<!-- Links -->
+<div id="links" class="tabcontent">
+   <!-- Task -->
+    <p><ol>
+           <b>Create a web page containing:</b>
+           <li>At least 3 links to different social networks</li>
+           <li>Unordered list with links to all previous assignments. Each one should open a new tab.</li>
+       </ol>
+    </p><hr> 
+    <!--different social networks  -->
+<div class="sotiallinks">
+    <a href="http://fe.ddns.protal.biz/#/slice-and-dice/links" target="_self" >Visit  site</a></br>
+    <a href="http://www.w3schools.com/html/html_lists.asp" target="_parent">w3school Tutorial</a></br>
+    <a href="https://www.google.bg/?hl=bg" target="_top">Go to google</a>
+</div>
+   <!--link in site  -->
+<div class="sitelink">
+       <ul>
+      <li><a href="html_texts.html" target="_blank">Texts Exsersises</a></li>
+      <li><a href="html_inline.html"target="_blank">Inline and Block Exsersises</a></li>
+      <li><a href="html_lists.html"target="_blank">Lists Exsersises</a></li>
+    </ul>
+</div>
+</div>
+
+<!-- Images -->
+<div id="images" class="tabcontent">
+<!-- Task -->
+<p><ol>
+        <b>Create a web page containing the following sections:</b>
+        <li>Section with 3 images linked from another websites</li>
+        <li>Section with 3 links with images of animals which opens Wikipedia page for the particular animal in a new tab</li>
+        <li>Section with 3 images of different types linked from a local folder which is on same level as the HTML file</li>
+        <li>Section containing an image map of your choice - add at least 3 clickable areas which open appropriate page</li>
+        <li>Section containing an image that is different depending on the user's browser viewport. Change the image source at least two times depending on the browser's width</li>
+    </ol>
+ </p><hr> 
+
+  <!--First section-->
+<section> 
+    <p>An images linked from another websites:</p>
+         <img src="http://www.iconarchive.com/download/i73026/cornmanthe3rd/plex/Other-html-5.ico" alt="logo" width="200px" height="100px">
+        <img src="http://fe.ddns.protal.biz/assets/img/brand/logo-prime.png" alt="logo" width="100px" height="100px">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="logo" width="200px" height="100px">
+</section>
+  <!--Second section-->
+<section>
+    <p>links with images of animals which opens Wikipedia page for the particular animal in a new tab</p>
+    <a href="https://bg.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC%D0%B0%D1%88%D0%BD%D0%BE_%D0%BA%D1%83%D1%87%D0%B5">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Karakatschan.jpg/240px-Karakatschan.jpg" alt="dog" width="200px" height="100px"></a>
+    <a href="https://bg.wikipedia.org/wiki/%D0%9A%D0%BE%D1%82%D0%BA%D0%B0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Pumiforme.JPG/240px-Pumiforme.JPG" alt="cat" width="200px" height="100px"></a>
+    <a href="https://bg.wikipedia.org/wiki/%D0%97%D0%B0%D0%B9%D1%86%D0%B8">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Feldhase.jpg/240px-Feldhase.jpg"alt="rabbit" width="200px" height="100px"></a>
+</section>
+ <!--Tird section-->
+ <section><P>Section with 3 images of different types linked from a local folder which is on same level as the HTML file</P>
+<img src="images/img_avatar.png" alt="Avatar"  width="150px" height="200px">
+<img src="images/img_avatar2.png" alt="Avatar"  width="150px" height="200px">
+<img src="images/img_avatar3.png" alt="Avatar"  width="150px" height="200px">
+</section>
+<!--Fourth section-->
+<section><p>Section containing an image map of your choice - add at least 3 clickable areas which open appropriate page</p>
+    <img src="images/workplace.png" alt="Workplace" usemap="#workmap" >
+    <map name="workmap">
+    <area shape="poly" coords="66,174,65,212,387,212,386,174" alt="Navigation"  href="https://www.w3schools.com/tags/tag_nav.asp" target="_blank"/>
+    <area shape="poly" coords="51,504,52,539,400,541,400,507"alt="Foother"  href="https://www.w3schools.com/tags/tag_section.asp" target="_blank" />
+    <area shape="poly" coords="50,239,52,492,293,491,293,238"alt="Section"  href="https://www.w3schools.com/tags/tag_section.asp"  target="_blank" />
+    <area shape="poly" coords="308,239,307,495,401,494,398,238"alt="Aside"  href="https://www.w3schools.com/tags/tag_aside.asp" target="_blank"  />
+    </map>
+</section>
+<!--five section-->
+<section>
+    <p>Section containing an image that is different depending on the user's browser viewport. Change the image source at least two times depending on the browser's width.</p>
+<picture>
+        <source media="(min-width: 850px)" srcset="images/img_avatar.png">
+        <source media="(min-width: 665px)" srcset="images/img_avatar2.png">
+        <img src="images/img_avatar3.png" alt="avatar" style="width:auto;">
+      </picture>
+</section>
+</div>    
+
+<!--Table-->    
+<div id="table" class="tabcontent">
+ <!-- Task -->
+ <p>
+        <ol>
+           <b>Create a web page containing the following sections:</b>
+           <li>Section with a table of 4 rows of data in 2 cols (Name and Email)</li>
+           <li>Section with a table that looks like this:<br>
+               <img src="http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/tables/tables-2.jpg" alt="table_exsample">
+           </li>
+           <li>Section with a table containing rows of data in 3 cols (Car Brand, Car Model, Image).
+            Car brand should be a link to the official website of the manufacturer.</li>
+       </ol>
+</p><hr>
+ <!-- 1 table -->
+ <section>
+     <table id="table1">
+         <thead>
+             <tr>
+                 <th>Name:</th>
+                 <th>Email:</th>
+             </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>Joe Doe</td>
+                 <td>Joedoe@gmail.com</td>
+             </tr>
+             <tr>
+                    <td>Joe Doe</td>
+                    <td>Joedoe@gmail.com</td>
+            </tr>
+            <tr>
+                    <td>Joe Doe</td>
+                    <td>Joedoe@gmail.com</td>
+            </tr>
+            <tr>
+                    <td>Joe Doe</td>
+                    <td>Joedoe@gmail.com</td>
+            </tr>
+         </tbody>
+     </table>
+ </section><br>
+ <!-- 2 table -->
+ <section>
+     <table id="table2">
+         <thead>
+             <tr>
+             <th rowspan="2" >Name</th>
+             <th rowspan="2" >Email</th>
+             <th colspan="2" id="phone">Phone</th></tr>
+             <tr>
+             <th>Business</th>
+             <th>Personal</th>
+            </tr>
+         </thead>
+         <tbody>
+             <tr>
+                 <td>John Doe</td>
+                 <td>john@doe.com</td>
+                 <td>+3598787878</td>
+                 <td>+3595555555</td>
+             </tr>
+             <tr>
+                    <td>John Doe</td>
+                    <td>john@doe.com</td>
+                    <td>+3598787878</td>
+                    <td>+3595555555</td>
+                </tr>
+                <tr>
+                        <td>John Doe</td>
+                        <td>john@doe.com</td>
+                        <td>+3598787878</td>
+                        <td>+3595555555</td>
+                    </tr>
+         </tbody>
+     </table>
+ </section><br>
+<!-- 3 table -->
+<section>
+    <table>
+        <thead>
+        <tr>
+            <th>Car Brand</th>
+            <th>Car Model</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+        <tbody>
+        <tr>
+            <td><a href="https://www.mercedes-benz.bg/passengercars.html">Mercedes</a></td>
+            <td> Mercedes S </td>
+            <td><img src="https://www.mercedes-benz.bg/passengercars/mercedes-benz-cars/models/e-class/e-class-coupe/explore/design-detail/_jcr_content/contentgallerycontainer/par/contentgallery_e902/par/contentgallerytile_b/image.MQ4.8.20180827143608.jpeg" alt="mercedes s"></td>
+        </tr>
+        <tr>
+            <td><a href="https://www.audi.bg/">Audi</a></td>
+            <td>A7/S7 Sportback</td>
+           <Td><img src="https://static-ms-cc.porscheinformatik.com/media/bg/MEDIA/A/MG/492/overviewM.jpg?APP=MSS&prefer=vivid"></Td> 
+        </tr>
+        </tbody>
+        
+    </table>
+</section>
+
+
+</div>
+
+<!--Forms-->
+<div id="forms" class="tabcontent">
+    <!--Task-->
+        <ol>
+           <b>Create a web page which contains the following forms:</b>
+           <li>Login Form
+               <a href="http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-1.jpg" target="_blank" alt="img_exsample">Task Image Login Form</a>
+           </li>
+           <li>Survey:
+               <a href=http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-2.jpg alt="img_exsample"target="_blank" >Task Image Survey:</a>
+           </li>
+           <li>Comment
+            <a href=http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-3.jpg >Task Image Comment</a>
+        </li>
+        <li>Create User
+            <a href=http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-4.jpg >Task Image Create User</a>
+        </li>
+        <li>Registration
+            <a href=http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-5.jpg >Task Image Registration</a>
+        </li>
+        <li>Youtube Basic
+            <a href=http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-6.jpg >Task Image Youtube Basic</a>
+        </li>
+        <li>Youtube Advanced
+            <a href=http://fe.ddns.protal.biz/assets/img/assignments/slice-and-dice/forms/forms-7.jpg>Task Image Youtube Advanced</a>
+        </li>
+       </ol>
+    <!--Login Form-->
+   <a href="forms/login.html" target="_blank">Login Form</a><br>
+    <!--Survery-->
+   <a href="forms/Survery.html"target="_blank">Survery</a><br>
+    <!--Commnets-->
+    <a href="forms/Comments.html" target="_blank">Comments</a><br>
+    <!--Create new user-->
+    <a href="forms/User-Create.html" target="_blank">User-Create</a><br>
+    <!--Registration-->
+    <a href="forms/Registration.html" target="_blank">Registration</a><br>
+    <!--Youtube Basic Info-->
+    <a href="forms/Youtube Basic Info.html" target="_blank">Youtube Basic Info</a><br>
+    <!--Youtube Advanced -->
+    <a href="forms/Youtube Advanced.html" target="_blank">Youtube Advanced.</a><br>
+</div>
+
+</div>
+</body>
+</html>

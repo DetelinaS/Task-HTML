@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="forms.css">
+    <title>Survery</title>
+</head>
+<body>
+        <h1>Please, fill the form</h1><br>
+        
+            <table>
+                <form method="POST"action="http://jkorpela.fi/cgi-bin/echo.cgi" >
+                <thead>
+                    <tr>
+                        <th>Lable</th>
+                        <th>Choices</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                     <td><label for="email">Email</label></td>
+                     <td><input type="email" placeholder="Enter your e-mail address" name="email"id="email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender</label></td>
+                        <td>Male<input type="radio" name="gender" value="male"></br>
+                            Female<input type="radio" name="gender" value="female"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fruit">Favorite Fruits</label></td>
+                        <td>Oranges<input type="checkbox" name="fruit" value="Oranges"></br>
+                            Apples<input type="checkbox" name="fruit" value="Apples"></br>
+                            Pears<input type="checkbox" name="fruit" value="Pears"></td>
+                    </tr>
+                    <tr><td></td>
+                    <td><input type="submit"value="Send!"></td></tr>
+                </tbody>
+            </form>
+            </table>
+       
+</body>
+</html>
